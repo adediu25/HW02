@@ -8,6 +8,6 @@ private:
 public:
 	void addRoom(Room);
 	Room getRoom(std::string);
-	int getArea();
+	double getArea();
 	void showPlan();
 };

@@ -1,6 +1,12 @@
 #include "Wall.h"
 
-Wall::Wall(std::string color, Point a, Point b) : Wall(a, b){
+Wall::Wall() {
+	exterior = false;
+	wallColor = "";
+	numOpenings = 0;
+}
+
+Wall::Wall(std::string color, Point a, Point b) : Line(a, b){
 	wallColor = color;
 }
 

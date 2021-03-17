@@ -5,15 +5,15 @@ Point::Point() {
 	yCoord = 0;
 }
 
-Point::Point(int x, int y) {
+Point::Point(double x, double y) {
 	xCoord = x;
 	yCoord = y;
 }
 
-int Point::getX() const {
+double Point::getX() const {
 	return xCoord;
 }
 
-int Point::getY() const {
+double Point::getY() const {
 	return yCoord;
 }

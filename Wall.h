@@ -8,6 +8,7 @@ private:
 	std::string wallColor;
 	int numOpenings;
 public:
+	Wall();
 	Wall(std::string, Point, Point);
 	bool isExterior() const;
 	std::string getColor() const;

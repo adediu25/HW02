@@ -8,7 +8,7 @@ Room::Room(std::string type, Wall a, Wall b) {
 	walls[3] = Wall(a.getColor(), Point(a.getPoint1().getX(), a.getPoint1().getY()), Point(a.getPoint1().getX(), b.getPoint2().getY()));
 }
 
-int Room::getArea()const {
+double Room::getArea() const {
 	return walls[0].getLength() * walls[1].getLength();
 }
 

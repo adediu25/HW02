@@ -12,11 +12,12 @@ Room HousePlan::getRoom(std::string type) {
 	}
 }
 
-int HousePlan::getArea() {
-	int totalArea = 0;
+double HousePlan::getArea() {
+	double totalArea = 0;
 	for (int i = 0; i < rooms.size(); i++) {
 		totalArea += rooms[i].getArea();
 	}
+	return totalArea;
 }
 
 void HousePlan::showPlan() {

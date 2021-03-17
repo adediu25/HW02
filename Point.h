@@ -2,11 +2,11 @@
 
 class Point {
 private:
-	int xCoord;
-	int yCoord;
+	double xCoord;
+	double yCoord;
 public:
 	Point();
-	Point(int, int);
-	int getX() const;
-	int getY() const;
+	Point(double, double);
+	double getX() const;
+	double getY() const;
 };

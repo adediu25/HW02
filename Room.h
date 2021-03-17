@@ -1,13 +1,16 @@
 #pragma once
 #include "Wall.h"
 
+// In a room, point1 of the wall is always the left
+// or bottom endpoint.
+
 class Room {
 private:
 	std::string roomType;
 	Wall walls[4];
 public:
 	Room(std::string, Wall, Wall);
-	int getArea()const;
+	double getArea() const;
 	std::string getType() const;
 	Wall getWall(int);
 };
