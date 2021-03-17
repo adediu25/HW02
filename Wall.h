@@ -9,7 +9,9 @@ private:
 	int numOpenings;
 public:
 	Wall();
-	Wall(std::string, Point, Point);
+	Wall(Point, Point, bool);
+	Wall(std::string, Point, Point, bool);
+	void setExterior(bool);
 	bool isExterior() const;
 	std::string getColor() const;
 	void setColor(std::string);

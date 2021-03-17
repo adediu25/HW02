@@ -1,5 +1,6 @@
 #include "Line.h"
-#include <cstdlib>
+#include <cmath>
+#include <iostream>
 
 Line::Line() {
 	point1 = Point();
@@ -20,5 +21,5 @@ Point Line::getPoint2() const {
 }
 
 double Line::getLength() const {
-	return sqrt(pow(point1.getX() + point2.getX(), 2) + pow(point1.getX() + point2.getX(), 2));
+	return sqrt(pow(point1.getX() - point2.getX(), 2) + pow(point1.getY() - point2.getY(), 2));
 }

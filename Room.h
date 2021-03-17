@@ -4,6 +4,7 @@
 // In a room, point1 of the wall is always the left
 // or bottom endpoint.
 
+// walls starts at bottom wall and goes around CCW
 class Room {
 private:
 	std::string roomType;
