@@ -3,7 +3,6 @@
 Wall::Wall() {
 	exterior = false;
 	wallColor = "";
-	numOpenings = 0;
 }
 
 Wall::Wall(Point a, Point b, bool ext) : Line(a, b) {

@@ -1,12 +1,13 @@
 #pragma once
+
 #include "Line.h"
 #include <string>
+#include <vector>
 
 class Wall : public Line {
 private:
 	bool exterior;
 	std::string wallColor;
-	int numOpenings;
 public:
 	Wall();
 	Wall(Point, Point, bool);
