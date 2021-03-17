@@ -5,6 +5,7 @@
 class HousePlan {
 private:
 	std::vector<Room> rooms;
+	int numRooms;
 public:
 	void addRoom(Room);
 	Room getRoom(std::string);

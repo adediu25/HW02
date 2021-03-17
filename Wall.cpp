@@ -6,8 +6,18 @@ Wall::Wall() {
 	numOpenings = 0;
 }
 
-Wall::Wall(std::string color, Point a, Point b) : Line(a, b){
+Wall::Wall(Point a, Point b, bool ext) : Line(a, b) {
+	wallColor = "";
+	exterior = ext;
+}
+
+Wall::Wall(std::string color, Point a, Point b, bool ext) : Line(a, b){
+	exterior = ext;
 	wallColor = color;
+}
+
+void Wall::setExterior(bool ext) {
+	exterior = ext;
 }
 
 bool Wall::isExterior() const {

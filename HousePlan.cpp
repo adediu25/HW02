@@ -2,10 +2,11 @@
 
 void HousePlan::addRoom(Room room) {
 	rooms.push_back(room);
+	numRooms++;
 }
 
 Room HousePlan::getRoom(std::string type) {
-	for (int i = 0; i < rooms.size(); i++) {
+	for (int i = 0; i < numRooms; i++) {
 		if (rooms[i].getType() == type) {
 			return rooms[i];
 		}
@@ -14,7 +15,7 @@ Room HousePlan::getRoom(std::string type) {
 
 double HousePlan::getArea() {
 	double totalArea = 0;
-	for (int i = 0; i < rooms.size(); i++) {
+	for (int i = 0; i < numRooms; i++) {
 		totalArea += rooms[i].getArea();
 	}
 	return totalArea;
